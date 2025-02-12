@@ -1,0 +1,72 @@
+{
+  "name": "@kennethsia/mui-components",
+  "version": "1.0.1",
+  "description": "A comprehensive Material UI v5 component library designed for seamless and extensible React development",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "storybook": "storybook dev --port 5174 --host 0.0.0.0",
+    "build-storybook": "storybook build",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kennethsia/mui-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kennethsia/mui-components/issues"
+  },
+  "homepage": "https://github.com/kennethsia/mui-components#readme",
+  "peerDependencies": {
+    "@emotion/react": "^11.x",
+    "@emotion/styled": "^11.x",
+    "@mui/material": "^5.x",
+    "react": "^17.x || ^18.x",
+    "react-dom": "^17.x || ^18.x"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.x",
+    "@babel/preset-react": "^7.x",
+    "@babel/preset-typescript": "^7.x",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "@types/react": "^18.x",
+    "postcss": "^8.4.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.0.0",
+    "typescript": "^5.x"
+  },
+  "keywords": [
+    "react",
+    "material-ui",
+    "components",
+    "ui-library",
+    "mui",
+    "design-system",
+    "typescript"
+  ],
+  "author": "kennethsia",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
